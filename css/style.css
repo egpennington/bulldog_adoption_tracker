@@ -1,0 +1,117 @@
+:root {
+  --main-color: #1D1E22;
+  --secondary-color: #D43435;
+  --accent-color: #FFD700;
+  --light-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+body::before {
+  content: "";
+  background: var(--main-color);
+  background: url("https://images.pexels.com/photos/5029543/pexels-photo-5029543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.55;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+header {
+  margin: 25px;
+}
+
+h1 {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.input-btn {
+ display: flex;
+ gap: 15px;
+}
+
+button {
+  background: var(--accent-color);
+  color: var(--main-color);
+  font-weight: 700;
+  padding: 10px 30px;
+  width: 120px;
+  border: none;
+  border-radius: 7px;
+}
+
+button:hover {
+  background: var(--main-color);
+  color: var(--accent-color);
+}
+
+.btn-light:active {
+  background: #06d6a0;
+  color: #fff;
+}
+
+.btn-med:active {
+  background: #ff0054;
+  color: #fff;
+}
+
+.btn-dark {
+  background: var(--main-color);
+  color: var(--accent-color);
+}
+
+.btn-dark:hover {
+  color: var(--main-color);
+  background: #fff;
+  border: 1px solid var(--main-color);
+}
+
+.btn-dark:active {
+  background: #51481A;
+  color: #fff;
+}
+
+#sum-el {
+  font-size: 4rem;
+}
+
+.top {
+  font-size: 1.1rem;
+}
+.bottom {
+  font-size: 0.6rem;
+}
+
+.sales-area {
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  width: fit-content;
+  height: fix-content;
+  max-width: 250px;
+  padding: 15px;
+}

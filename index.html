@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulldog Production Sales Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bulldog adoption tracker:</h1>
+    </header>
+    <h2>Daily Target: 8</h2>
+    
+    <span id="sum-el">0</span>
+    
+    <div class="input-btn">
+      <button class="btn-light" id="count-el">
+        <p class="top">+</p>
+        <p class="bottom">click to add</p>
+      </button>
+      
+      <button class="btn-med" id="minus-el">
+        <p class="top">-</p>
+        <p class="bottom">Double click</p>
+      </button>      
+    </div>
+    
+    <button class="btn-dark" id="save-el">Log <i class="fa-solid fa-right-to-bracket"></i></button>
+    
+      <h2>Day's Sales:</h2>
+    <dis class="sales-area">
+      <p id="previous-sum-el"></p>      
+    </dis>    
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
